@@ -1,0 +1,74 @@
+.form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: black;
+}
+
+.form, h2 {
+    color: black;
+}
+.form_image {
+    grid-row: span 3;
+    background-image: url("../../img/cat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form_textarea {
+    grid-row: span 2;
+    resize: none;
+    height: 100%;
+}
+
+.form_btn {
+    font-size: 14px;
+    width: 100%;
+    background-color: black;
+}
+.form .btn{
+    background-color: black;
+}
+.form_input {
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--outline-color);
+    border-radius: 4px;
+    padding: 8px 8px;
+}
+
+.form_input:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.form_fake-checkbox {
+    font-size: 22px;
+}
+
+.form_checkbox-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+}
+
+.form_checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+/* .form_checkbox:focus~.form__fake-checkbox,
+.form_checkbox:focus~.form__label {
+    color: var(--text-secondary-color);
+}
+
+.form_checkbox:checked~.form__fake-checkbox,
+.form_checkbox:checked~.form__label {
+    color: var(--accent-color);
+}
+
+.form_checkbox:checked:focus~.form__fake-checkbox,
+.form_checkbox:checked:focus~.form__label {
+    opacity: 0.6;
+} */
